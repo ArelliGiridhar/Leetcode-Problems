@@ -9,6 +9,9 @@ class Solution {
                 sb.append(rom[i]);
                 num-=values[i];
             }
+            if(num==0){
+                i=n;
+            }
         }
         return sb.toString();
     }
