@@ -4,7 +4,8 @@ class Solution {
         int zcnt=0;
         int curcnt=0;
         int maxlen=0;
-        for(int right=0;right<nums.length;right++){
+        int right=0;
+   while(right<nums.length){
             curcnt++;
             if(nums[right]==0){
                 zcnt++;
@@ -16,6 +17,7 @@ class Solution {
                 left++;
             }
             curcnt=right-left;
+            right++;
           maxlen=Math.max(curcnt,maxlen);
         }
         return maxlen;
