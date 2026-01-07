@@ -21,7 +21,7 @@ class Solution {
                     cosum -= weights[i];
                 } else {
                     req++;
-                    cosum = mid - weights[i];
+                    cosum = mid-weights[i];
                 }
             }
 
